@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+.header{
+    font-family: 'ddg-serp-icons' !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+.horn:before {
+    content: '\48';
+}
+
+.down:before {
+    content: '\76';
+}
