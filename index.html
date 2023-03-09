@@ -1,64 +1,97 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Duck Duck Go Clone</title>
-    </head>
-    <body>
-        <div class="header">
-                <div><span class="horn" data-type="social"></span></div>
-                <div><span class="down" data-type="social"></span></div>
-                <div><a class="header__button--menu  js-side-menu-open" href="#">⇶</a></div>
-        </div>
-        
-        <div class="logo-searchbar">
-         <img src="/images/DuckDuckGo_logo.png" width="200px" height="162px">
-         <form id="searchform">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Duck Duck Go Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div><span class="horn" data-type="social"></span></div>
+        <div><span class="down" data-type="social"></span></div>
+        <div><a class="header__button--menu  js-side-menu-open" href="#">⇶</a></div>
+    </div>
+
+    <div class="logo-searchbar">
+        <img class="duckduck-icon" src="/images/DuckDuckGo_logo.png" width="200px" height="162px">
+        <form id="searchform">
             <input autocomplete="off" type="text" placeholder="Search the web without being tracked.">
             <input type="button" value="X">
         </form>
-        </div>
-        <h3>Tired of being tracked online? We can help.</h3>
+    </div>
+    <h1>Tired of being tracked online? We can help.</h1>
+    <div style="margin-bottom: 16px">
         <p>Get seamless privacy protection on your browser for free with one download:</p>
-        <ul>
-            <li>Private Search</li>
-            <li>Tracker Blocking</li>
-            <li>Site Encryption</li>
+    </div>
+    <!-- List diffrent privacy protection vertically -->
+    <div>
+        <ul class="privacy-nav">
+            <li class="privacy-list-items">Private Searching</li>
+            <li class="privacy-list-items">Tracker Blocking</li>
+            <li class="privacy-list-items">Site Encryption</li>
         </ul>
-        <button>Add DuckDuckGo to Chrome</button>
-        <p>Trusted by tens of millions worldwide!</p>
-        <p>Privacy Protection For Any Device</p>
+    </div>
+    <!-- End list vertal privacy options -->
 
-        <div class="privacy-options">
-            <div>
-                <img src="/images/laptop.svg">
-                <p>Privacy for Chrome</p>
-                <p>Browse as usual, and we'll take care of the rest. We bundled our search engine, tracker blocker, and encryption enforcer into one <a href="#">Chrome Extension.</a></p>
-            </div>
-            <div>
-                <img src="/images/search.svg">
-                <p>Private Search Engine</p>
-                <p>Search privately with our app or extension, add private web search to your favorite browser, or search directly at <a href="#">duckduckgo.com</a>.</p>
-            </div>
-            <div>
-                <img src="/images/mobile.svg">
-                <p>Privacy Browser App</p>
-                <p>Our private browser for mobile comes equipped with our search engine, tracker blocker, encryption enforcer, and more. Available on <a href="#">iOS & Android</a>.</p>
+    <button class="first-button">Add DuckDuckGo to Chrome</button>
+    <p class="trustedtext">Trusted by tens of millions worldwide!</p>
+    <p>Privacy Protection For Any Device</p>
+    <!-- The 3 privacy option squares -->
+    <div class="privacy-options">
+        <div>
+            <img src="/images/laptop.svg">
+            <p class="subheading">Privacy for Chrome</p>
+            <p>Browse as usual, and we'll take care of the rest. We bundled our search engine, tracker blocker, and
+                encryption enforcer into one <a href="#">Chrome Extension.</a></p>
+        </div>
+        <div>
+            <img src="/images/search.svg">
+            <p>Private Search Engine</p>
+            <p>Search privately with our app or extension, add private web search to your favorite browser, or search
+                directly at <a href="#">duckduckgo.com</a>.</p>
+        </div>
+        <div>
+            <img src="/images/mobile.svg">
+            <p>Privacy Browser App</p>
+            <p>Our private browser for mobile comes equipped with our search engine, tracker blocker, encryption
+                enforcer, and more. Available on <a href="#">iOS & Android</a>.</p>
+        </div>
+    </div>
+    <!-- Background Curve -->
+    <svg class="content-info__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1438 134">
+        <path d="M1438 1442H0V31.001S438.105 0 719 .001c280.896 0 719 31 719 31V1442z" fill="#58b792"></path>
+    </svg>
+    <div class="midsection">
+        <div class="midsection-content">
+            <h1 class="largerfont">We don&apos;t store your personal information. Ever.</h1>
+            <p>Our privacy policy is simple: we don’t collect
+                or share any of your personal information.</p>
+            <button class="second-button">Add DuckDuckGo to Chrome</button>
+        </div>
+        <img src="images/doctor_monster.svg">
+    </div>
+
+    <div>
+        <h2>Frequently Asked Questions</h2>
+
+        <div><button></button>
+            <header class="faq-question">
+                <div>How does DuckDuckGo make money?</div>
+            </header>
+            <div class="faq-answer" data-collapse="true" property="accepted-answer">We make our money from private ads on our search engine. On other search engines,
+                ads are based on profiles compiled about you using your personal information like search,
+                browsing, and purchase history. Since we don’t collect that information, search ads on
+                DuckDuckGo are based on the search results page you are viewing, not on you as a person.
+                For example, if you search for cars, we’ll show you ads about cars. Learn more.
             </div>
         </div>
-        <!-- Background Curve -->
-<svg class="content-info__curve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1438 134"><path d="M1438 1442H0V31.001S438.105 0 719 .001c280.896 0 719 31 719 31V1442z" fill="currentColor"></path></svg>
+        <header>What does Google know about me?</header>
+        <header>Why use DuckDuckGo instead of Google?</header>
+        <header>How do DuckDuckGo search results compare to Google’s?</header>
 
-        <h4>We don&apos;t store your personal information. Ever.</h4>
-<p>Our privacy policy is simple: we don’t collect
-    or share any of your personal information.</p>
-    <img src="images/doctor_monster.svg">
-    <h5>Frequently Asked Questions</h5>
-    <ul>
-        <li>How does DuckDuckGo make money?</li>
-        <li>What does Google know about me?</li>
-        <li>Why use DuckDuckGo instead of Google?</li>
-        <li>How do DuckDuckGo search results compare to Google’s?</li>
-    </ul>
-    <button>Add DuckDuckGo to Chrome</button>
-    </body>
+    </div>
+    <button class="first-button">Add DuckDuckGo to Chrome</button>
+</body>
+
 </html>

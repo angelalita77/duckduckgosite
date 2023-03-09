@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    margin: 0px;
+    color: white;
+    text-align: center;
 }
 
 .header{
@@ -18,3 +21,125 @@ body {
 .down:before {
     content: '\76';
 }
+
+h1{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+.midsection {
+    background-color: #58b792;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.midsection-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.largerfont {
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 0px;
+    width: 700px;
+}
+
+p{
+    font-family: sans-serif;
+}
+.logo-searchbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+
+}
+
+.duckduck-icon {
+    margin: 14px 0 40px;
+}
+
+.trustedtext {
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+.privacy-nav {
+    list-style-type: none;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.privacy-list-items{
+    /* background: red; */
+    margin: 10px 10px 10px 5px;;
+    font-weight: 525px;
+}
+
+.privacy-list-items::before {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        content: "✔";
+        color: white;
+        display: inline-block;
+        font-size: 15px;
+        width: 1em;
+        background: cornflowerblue;
+        padding-left: 2px;
+        border-radius: 50%;
+        margin-right: 6px;
+        
+}
+
+ button{
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.first-button {
+    background-color:cornflowerblue;
+}
+
+.second-button {
+    background-color: rgb(53, 109, 87);
+}
+
+.privacy-options
+{
+    height: 320px;
+    padding-left: 75px;
+    padding-right: 75px;
+    /* background: plum; */
+    /* border: 4px solid indigo; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.privacy-options div {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  border: 4px solid darkslategray;
+  background: rgb(40, 40, 40);
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.subheading {
+    font-weight: 900;
+}
+
+
