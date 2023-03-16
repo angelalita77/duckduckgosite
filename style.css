@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color:rgb(28, 28, 28);
     margin: 0px;
     color: white;
     text-align: center;
@@ -61,6 +61,13 @@ p{
 
 }
 
+.logo-searchbar input[type=text] {
+    font-size: 1.14em;
+    color: #58b792;
+    max-width: 665px;
+    width: 100%;
+}
+
 .duckduck-icon {
     margin: 14px 0 40px;
 }
@@ -107,6 +114,7 @@ p{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
+  
 }
 
 .first-button {
