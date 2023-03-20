@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <title>Duck Duck Go Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- Top Nav Bar -->
     <div class="header">
-        <div><span class="horn" data-type="social"></span></div>
-        <div><span class="down" data-type="social"></span></div>
-        <div><a class="header__button--menu  js-side-menu-open" href="#">⇶</a></div>
+        <div><i class="bi bi-megaphone-fill"></i><i class="bi bi-chevron-down"></i></div>
+        <div><i class="bi bi-list"></i></div>
     </div>
+    <!-- Top Nav Bar end  -->
+    
     <!-- Search Bar and Logo -->
-    <div class="logo-searchbar">
+    <div class="logo">
         <img class="duckduck-icon" src="/images/DuckDuckGo_logo.png" width="200px" height="162px">
-        <form action="">
-            <input autocomplete="off" type="text" placeholder="Search the web without being tracked." name="q">
+    </div>
+    <div class="search-container">
+        <form action="" method="get" class="search-bar">
+            <input type="text" placeholder="Search the web without being tracked." name="q">
             <button type="submit"><img src="/images/search.png"></button>
         </form>
     </div>

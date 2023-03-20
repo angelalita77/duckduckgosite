@@ -5,14 +5,22 @@ body {
     text-align: center;
 }
 
+/* Top Nav Bar */
 .header{
-    font-family: 'ddg-serp-icons' !important;
+    font-family: 'ddg-serp-icons';
     font-style: normal;
-    font-weight: normal !important;
+    font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    font-size: 10px;
+    font-size: 20px;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: flex-end;
+}
+.header > div {
+    padding: 2px;
+    margin: 5px;
+    background-color: red;
 }
 .horn:before {
     content: '\48';
@@ -53,24 +61,69 @@ h1{
 p{
     font-family: sans-serif;
 }
-.logo-searchbar {
+
+/* Duck Duck Go Logo */
+.logo {
     display: flex;
     align-items: center;
     margin: auto;
     flex-direction: column;
-
-}
-
-.logo-searchbar input[type=text] {
-    font-size: 1.14em;
-    color: #58b792;
-    max-width: 665px;
-    width: 100%;
 }
 
 .duckduck-icon {
     margin: 14px 0 40px;
 }
+
+
+/* Search Bar */
+.search-container {
+        background: #1c1c1c;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.search-bar {
+    width: 60%;
+    max-width: 700px;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 0px;
+  }
+
+  .search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #AAAAAA;
+  }
+  
+  ::placeholder {
+    color: #AAAAAA;
+  }
+  
+  .search-bar button img {
+    width: 22px;
+  }
+  
+  
+  .search-bar button {
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background: #444444;
+  }
+  /* Search Bar end */
 
 .trustedtext {
     font-size: 12px;
